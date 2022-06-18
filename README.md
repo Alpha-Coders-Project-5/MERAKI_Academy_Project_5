@@ -82,10 +82,12 @@ npm start
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587960/Home_page_obkuil.png" alt="Result site">
 <br>
+
 2.If you clicked on Create new account button Register popup appear
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587948/Register_page_rugi0a.png" alt="Result site">
 <br>
+
 3.Dashboard tab to view the dashboard section
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587969/Dashboard_tiorfw.png" alt="Result site">
@@ -99,18 +101,20 @@ npm start
 5.Userprofile tab to view the profile section.
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588071/User_profile_aqb0uj.png" alt="Result site">
-<br> 6. Live Search tab to seach for the users.
+
+<br>
+6. Live Search tab to seach for the users.
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588728/live_search_ie92n2.png" alt="Result site">
-<br> 7. search Result page .
+<br> 
+7. search Result page .
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588820/Search_result_lij01z.png" alt="Result site">
 <br>
-
 8. chat box to chat with friends
-   <br>
-   <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655589008/Chat_1_njiaej.png" alt="Result site">
-   <br>
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655589008/Chat_1_njiaej.png" alt="Result site">
+<br>
 
 ## ⛏️ Built Using <a name = "built_using"></a>
 

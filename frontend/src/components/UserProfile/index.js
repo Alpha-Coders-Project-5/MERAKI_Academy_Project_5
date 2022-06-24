@@ -76,12 +76,6 @@ const UserProfile = () => {
     };
   });
 
-  // const { users } = useSelector((state) => {
-  //   return {
-  //     users: state.users.users,
-  //   };
-  // });
-
   const { users, friends } = useSelector((state) => {
     return {
       users: state.users.users,
@@ -203,7 +197,6 @@ const UserProfile = () => {
           }
           setUserFriends(friendsRes);
           dispatch(setFriends(arrayofFriends));
-          setShow(true);
         }
       })
       .catch((error) => {
@@ -235,7 +228,6 @@ const UserProfile = () => {
 
   // ==========================
   const unFollowFriend = (id) => {
-    console.log("ID", id);
     axios
       .delete(`http://localhost:5000/user/delete/${id}`, {
         headers: {
@@ -251,6 +243,7 @@ const UserProfile = () => {
   };
   //=================================
   const getPostByUserId = (id) => {
+    console.log(id);
     axios
       .get(`http://localhost:5000/posts/user/${id}`)
       .then((res) => {
@@ -305,13 +298,10 @@ const UserProfile = () => {
       })
       .then((result) => {
         if (result.data.success) {
-          // setUsers(result.data.result);
           dispatch(setUsers(result.data.result));
-          setShow(true);
         }
       })
       .catch((error) => {
-        setShow(false);
         console.log(error.response.data.message);
       });
   };
@@ -441,8 +431,6 @@ const UserProfile = () => {
 
   return (
     <div className="post-container">
-      {/* ====================== */}
-
       <div className="profile-header">
         <div className="header-container">
           <div className="cover">
@@ -458,7 +446,7 @@ const UserProfile = () => {
               );
             })}
           </div>
-          {/* ================================= */}
+
           <div className="profile-container">
             <div className="profile-left">
               <div className="profile">
@@ -469,8 +457,6 @@ const UserProfile = () => {
                     </div>
                   );
                 })}
-
-                {/* <button onClick={editProfile}>UpdatePhoto</button> */}
               </div>
 
               {users.map((el) => {
@@ -479,7 +465,6 @@ const UserProfile = () => {
             </div>
 
             <button
-              //  className="follow-profile"
               className={
                 myFriends.includes(parseInt(id)) ? "follow-profile" : "blue"
               }
@@ -494,8 +479,6 @@ const UserProfile = () => {
           </div>
         </div>
       </div>
-
-      {/* ================================= */}
 
       <div className="main-container">
         <div className="left-container"></div>
@@ -551,7 +534,6 @@ const UserProfile = () => {
           ) : (
             ""
           )}
-          {/* INFO */}
 
           <div className="mid-left">
             <div className="info-left left">
@@ -618,16 +600,16 @@ const UserProfile = () => {
                     );
                   })
                 ) : (
-                  <p>You have no friends</p>
+                  <h1 className="no-friends userProfile">
+                    You have no friends
+                  </h1>
                 )}
               </div>
             </div>
           </div>
 
           <div className="mid-right">
-            {" "}
             <div className="container-post">
-              {" "}
               {show &&
                 posts.map((post, index) => {
                   return (
@@ -635,7 +617,6 @@ const UserProfile = () => {
                       <div className="post">
                         <div className="postWrapper">
                           <div className="postTop">
-                            {/* DIV TOP */}
                             {allUser.map((user, i) => {
                               if (post.user_id === user.id) {
                                 return (
@@ -653,10 +634,6 @@ const UserProfile = () => {
                                 );
                               }
                             })}
-                            {/* flex+center+spacebetween */}
-
-                            {/* ------------------------------------------------------------ */}
-                            {/*DIV TOP  */}
                           </div>
                           <div className="postCenter">
                             <p>{post.content}</p>
@@ -717,7 +694,6 @@ const UserProfile = () => {
                               )}
                             </div>
                           </div>
-                          {/* ------------------------------------------------------------------------------ */}
 
                           <div className="postComment">
                             <div className="comment-div ">
@@ -917,6 +893,11 @@ const UserProfile = () => {
                     </div>
                   );
                 })}
+              {!show ? (
+                <h1 className="no-posts profileUser">No posts</h1>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
 
@@ -926,8 +907,6 @@ const UserProfile = () => {
         </div>
         <div className="right-container"></div>
       </div>
-
-      {!posts.length ? <h1>No posts</h1> : ""}
     </div>
   );
 };

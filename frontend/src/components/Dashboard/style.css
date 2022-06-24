@@ -776,3 +776,18 @@ textarea::-webkit-scrollbar {
 .bottom-popup {
   margin: 10px 0;
 }
+
+.no-friends {
+  font-size: 1.7rem;
+  margin: 10px;
+  color: rgba(113, 113, 113, 0.774);
+}
+
+.no-posts {
+  font-size: 1.7rem;
+  color: rgba(113, 113, 113, 0.774);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

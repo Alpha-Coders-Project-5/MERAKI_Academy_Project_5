@@ -290,6 +290,11 @@ const SearchResult = () => {
               <p>{friend.userName}</p>
             </div>
           ))}
+          {!friends.length ? (
+            <h1 className="no-friends">You have no friends</h1>
+          ) : (
+            <></>
+          )}
         </div>
       </div>
     </div>

@@ -167,13 +167,10 @@ const Dashboard = () => {
       })
       .then((result) => {
         if (result.data.success) {
-          // setUsers(result.data.result);
           dispatch(setUsers(result.data.result));
-          setShow(true);
         }
       })
       .catch((error) => {
-        setShow(false);
         console.log(error.response.data.message);
       });
   };
@@ -228,7 +225,6 @@ const Dashboard = () => {
                 const postsRes = res.data.result.reverse();
                 const likeRes = response.data.result;
                 const friendRes = result.data.result;
-                console.log("allPOSTS", postsRes);
 
                 const postWithLike = [];
 
@@ -250,6 +246,7 @@ const Dashboard = () => {
                     }
                   });
                 });
+
                 dispatch(setPosts(postWithLike));
                 setShow(true);
                 setFriendsNum(false);
@@ -272,6 +269,7 @@ const Dashboard = () => {
                       }
                     });
                   });
+
                   dispatch(setPosts(postWithLike));
                   setShow(true);
                   setFriendsNum(false);
@@ -279,7 +277,6 @@ const Dashboard = () => {
               });
           })
           .catch((error) => {
-            console.log(error.response.data);
             const postsRes = res.data.result.reverse();
             const filtered = postsRes.filter((el) => {
               return el.user_id === userId;
@@ -295,6 +292,7 @@ const Dashboard = () => {
               setShow(true);
             } else {
               setFriendsNum(true);
+              setShow(false);
             }
           });
       })
@@ -531,7 +529,6 @@ const Dashboard = () => {
           }
 
           dispatch(setFriends(arrayofFriends));
-          setShow(true);
         }
       })
       .catch((error) => {
@@ -778,7 +775,6 @@ const Dashboard = () => {
             </div>
           </div>
           <div className="container-post">
-            {" "}
             {show &&
               posts.map((post, index) => {
                 return (
@@ -1202,24 +1198,6 @@ const Dashboard = () => {
                                 })}
                               {!comments.length ? <h1>No comments</h1> : ""}
                             </div>
-
-                            {/* <button
-                              id={post.id}
-                              className="like"
-                              onClick={(e) => {
-                                const commentSection = document.getElementById(
-                                  `comment${e.target.id}`
-                                );
-                                const commentDiv = document.getElementById(
-                                  `commentDiv${e.target.id}`
-                                );
-                                commentDiv.style.display = "block";
-                                commentSection.focus();
-                                newComment(e, post.id);
-                              }}
-                            >
-                              Add
-                            </button> */}
                           </div>
                         </div>
                       </div>
@@ -1227,12 +1205,7 @@ const Dashboard = () => {
                   </div>
                 );
               })}
-            {/* <button onClick={()=>{
-          //  console.log("number1",  numberRef.current);
-           numberRef.current = numberRef.current + 1
-          // console.log("number2",  numberRef.current);
-          getAllPosts(numberRef.current)
-        }}>Click</button> */}
+            {!show ? <h1 className="no-posts">No posts</h1> : <></>}
           </div>
         </div>
       </div>
@@ -1280,6 +1253,7 @@ const Dashboard = () => {
               <p>{friend.userName}</p>
             </div>
           ))}
+          {!friends.length ? <h1 className="no-friends">You have no friends</h1> : <></>}
         </div>
         <div className={chatHeader ? "chat-container" : "hide"}>
           <div className="chat-header">

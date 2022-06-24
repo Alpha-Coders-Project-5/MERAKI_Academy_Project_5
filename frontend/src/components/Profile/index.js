@@ -283,7 +283,6 @@ const Profile = () => {
           }
           setUserFriends(friendsRes);
           dispatch(setFriends(arrayofFriends));
-          setShow(true);
         }
       })
       .catch((error) => {
@@ -319,7 +318,6 @@ const Profile = () => {
             setShow(true);
           })
           .catch((error) => {
-            console.log(error.response.data);
             if (error.response.data.massage.includes("likes")) {
               const postsRes = res.data.result.reverse();
 
@@ -348,13 +346,10 @@ const Profile = () => {
       })
       .then((result) => {
         if (result.data.success) {
-          // setUsers(result.data.result);
           dispatch(setUsers(result.data.result));
-          setShow(true);
         }
       })
       .catch((error) => {
-        setShow(false);
         console.log(error.response.data.message);
       });
   };
@@ -597,7 +592,6 @@ const Profile = () => {
 
   return (
     <div className="post-container">
-      {/* ====================== */}
       <div className="profile-header">
         {urlCover ? (
           <div className="cover-choice">
@@ -632,21 +626,7 @@ const Profile = () => {
                 </div>
               );
             })}
-
-            <label htmlFor="cover-input" className="cover-input-label">
-              <input
-                id="cover-input"
-                hidden
-                type="file"
-                onChange={(e) => {
-                  coverRef.current = e.target.files[0];
-                  uploadCover();
-                }}
-              />
-              <ImCamera className="camera" /> Edit cover photo
-            </label>
           </div>
-          {/* ================================= */}
           <div className="profile-container">
             <div className="profile-left">
               <div className="profile">
@@ -673,6 +653,18 @@ const Profile = () => {
               </div>
               <h1>{jwt_decode(token).userName}</h1>
             </div>
+            <label htmlFor="cover-input" className="cover-input-label">
+              <input
+                id="cover-input"
+                hidden
+                type="file"
+                onChange={(e) => {
+                  coverRef.current = e.target.files[0];
+                  uploadCover();
+                }}
+              />
+              <ImCamera className="camera" /> Edit cover photo
+            </label>
           </div>
           {urlImage ? (
             <div className="profile-change">
@@ -699,7 +691,7 @@ const Profile = () => {
           )}
         </div>
       </div>
-      {/* ================================= */}
+
       <div className="main-container">
         <div className="left-container"></div>
         <div className="mid-container">
@@ -811,7 +803,6 @@ const Profile = () => {
           ) : (
             ""
           )}
-          {/* INFO */}
 
           <div className="mid-left">
             <div className="info-left left">
@@ -909,16 +900,15 @@ const Profile = () => {
                     );
                   })
                 ) : (
-                  <p>You have no friends</p>
+                  <h1 className="no-friends userProfile">
+                    You have no friends
+                  </h1>
                 )}
               </div>
             </div>
-            {/* FRIENDS */}
           </div>
 
-          {/* Posts */}
           <div className="mid-right">
-            {" "}
             <div className="post-container">
               <div className="share">
                 <div
@@ -1044,7 +1034,6 @@ const Profile = () => {
               </div>
 
               <div className="container-post">
-                {" "}
                 {show &&
                   posts.map((post, index) => {
                     return (
@@ -1497,15 +1486,13 @@ const Profile = () => {
                       </div>
                     );
                   })}
-                {!posts.length ? <h1>No posts</h1> : ""}
+                {!show ? <h1 className="no-posts">No posts</h1> : <></>}
               </div>
             </div>
           </div>
-          {/* Posts */}
-          {/* About */}
+
           <div className="about"></div>
 
-          {/* Friends */}
           <div className="friends"></div>
         </div>
         <div className="right-container"></div>

@@ -796,7 +796,9 @@ const Profile = () => {
                     );
                   })
                 ) : (
-                  <p>You have no friends</p>
+                  <h1 className="no-friends userProfile">
+                    You have no friends
+                  </h1>
                 )}
               </div>
             </div>

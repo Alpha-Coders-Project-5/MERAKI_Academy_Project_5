@@ -50,11 +50,14 @@ const Search = () => {
       .then((result) => {
         if (result.data.success) {
           dispatch(setUserName(result.data.result));
+          navigate("/search/users");
           setName("");
         }
       })
       .catch((error) => {
-        console.log(error.response.data.message);
+        dispatch(setUserName([]));
+        navigate("/search/users");
+        console.log(error.response.data);
       });
   };
 
@@ -86,7 +89,7 @@ const Search = () => {
         nameRef.current.reset();
       }
     });
-  }, []);
+  }, [name]);
 
   return (
     <div className="search-container">
@@ -163,7 +166,6 @@ const Search = () => {
                   id={"Link"}
                   className="user-search"
                   onClick={() => {
-                    navigate("/search/users");
                     getUserByName();
                     nameRef.current.reset();
                     setSearchBox(false);
@@ -210,7 +212,7 @@ const Search = () => {
                     </div>
                   );
                 })}
-              {name ? (
+              {/* {name ? (
                 <div
                   id={"Link"}
                   className="user-search"
@@ -225,7 +227,7 @@ const Search = () => {
                 </div>
               ) : (
                 <></>
-              )}
+              )} */}
             </div>
           )}
         </div>

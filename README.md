@@ -90,30 +90,113 @@ npm start
 
 3.Tab on Logo or Home icon tab to view the dashboard page
 <br>
-<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587969/Dashboard_tiorfw.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656082654/dashboard_tab_jbm2gx.png" alt="Result site">
 <br>
 
 4.profile tab to view the profile section .
 <br>
-<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588080/profile_n1uu1l.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656082845/profile_vdp5zy.png" alt="Result site">
 <br>
 
-5.Userprofile tab to view the profile section.
+5.post tab to open post popup .
 <br>
-<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588071/User_profile_aqb0uj.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656083115/Post_part_1_gzshg8.png" alt="Result site">
+<br>
+
+6.add photo (green arrow), remove photo (red arrow), add post (blue arrow) .
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656083115/post_part2_cuhb2g.png" alt="Result site">
+<br>
+
+7.three dots tab to update or delete post .
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656083497/three_dots_mky38n.png" alt="Result site">
+<br>
+
+8.Update cover tab (red arrow) to update cover picture and update profile picture (blue arrow) .
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656083746/profile_picrures_mwnqn1.png" alt="Result site">
+<br>
+
+9.Edit details tab to update user info .
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656083939/details_edit_crv5tf.png" alt="Result site">
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656083996/edit_info_popup_w0pghn.png" alt="Result site">
+<br>
+
+10.See all friends tab to show all your friends and you can click on your friend picture and name to visit his page .
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656084173/see_all_friends_oajl6k.png" alt="Result site">
+<br>
+you can unfollow your friends from here
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656084174/friends_popup_ac4ob8.png" alt="Result site">
+<br>
+
+11. Live Search tab to seach for the users.
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656084480/search_bar_lamnhf.png" alt="Result site">
+Search result, here you can follow and unfollow users and visit users pages
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656084479/search_result_follow_fth5ll.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656084480/search_result_unfollow_c720zz.png" alt="Result site">
+<br>
+
+12.Userprofile page to view other user info, friends, posts and follow and unfollow this user.
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656084806/User_profile_gi14un.png" alt="Result site">
 
 <br>
-6. Live Search tab to seach for the users.
+
+13.comment tab (red arrow) to will take you to comment textarea (green arrow), show all comments (blue arrow) to view all comments on the post.
 <br>
-<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588728/live_search_ie92n2.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085111/Comment_oesnip.png" alt="Result site">
 <br> 
-7. search Result page .
+after adding the comment you can update or delete it.
 <br>
-<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655588820/Search_result_lij01z.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085112/comment_actions_zcb62z.png" alt="Result site">
 <br>
-8. chat box to chat with friends
+
+14.Like tab to Like and unlike the post.
 <br>
-<img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655589008/Chat_1_njiaej.png" alt="Result site">
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085541/Like_xvqsup.png" alt="Result site">
+<br> 
+after Like the post the user will got notification and can click on mark as read to clear notifications.
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085541/notification_wmx5v7.png" alt="Result site">
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085541/noti_popup_vctpkc.png" alt="Result site">
+<br>
+
+15.contacts area will show you online and offline friends.
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085770/contacts_o5h5zg.png" alt="Result site">
+<br> 
+
+16.tab on friends in contact area to show chatbox.
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656085859/chatbox_louqay.png" alt="Result site">
+<br>
+
+17.When send message the targeted user will get notification about who messaged him.
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656086110/chat_noti_qmeqvl.png" alt="Result site">
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656086109/chat_popup_kleiks.png" alt="Result site">
+<br>
+when opening the chat box you can view the recieved message and you can reply and start chat.
+<br>
+first user Chat
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656086432/Phill_chat_mlctsi.png" alt="Result site">
+<br>
+second user Chat
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656086432/Jane_chat_jnnlvh.png" alt="Result site">
+<br>
+
+18.Logout tabto sign out from accout .
+<br>
+<img width=400px height=200px src="https://res.cloudinary.com/dtiuiyrdu/image/upload/v1656086547/logout_n2qjk5.png" alt="Result site">
 <br>
 
 ## ⛏️ Built Using <a name = "built_using"></a>

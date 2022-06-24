@@ -78,7 +78,7 @@ npm start
 
 ## 🎈 Usage <a name="usage"></a>
 
-1.Home tab to view the home section
+1.Home page when you open the app
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587960/Home_page_obkuil.png" alt="Result site">
 <br>
@@ -88,7 +88,7 @@ npm start
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587948/Register_page_rugi0a.png" alt="Result site">
 <br>
 
-3.Dashboard tab to view the dashboard section
+3.Tab on Logo or Home icon tab to view the dashboard page
 <br>
 <img width=400px height=200px src="https://res.cloudinary.com/dviqtfdwx/image/upload/v1655587969/Dashboard_tiorfw.png" alt="Result site">
 <br>

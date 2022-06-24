@@ -146,7 +146,7 @@ const SearchResult = () => {
           >
             <div className="profileName left-bar-name"></div>
             <img className="Icon" src={jwt_decode(token).image} />
-            <p style={{ "font-size": "1.2rem" }}>
+            <p style={{ fontSize: "1.2rem" }}>
               <strong>{jwt_decode(token).userName}</strong>
             </p>
           </li>
@@ -195,7 +195,7 @@ const SearchResult = () => {
                   {userId === user.id ? (
                     <Link
                       style={{ color: "black" }}
-                      className="friend-link link"
+                      className="friend-link search-link link"
                       to={`/profile`}
                     >
                       <img className="friendimg" src={user.image} />
@@ -252,7 +252,11 @@ const SearchResult = () => {
               </div>
             );
           })}
-          {!users.length ? <h1>No users</h1> : ""}
+          {!users.length ? (
+            <h1 className="no-friends userProfile">No result found</h1>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <div className="rightbar">
